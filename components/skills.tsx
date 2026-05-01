@@ -61,26 +61,32 @@ export function SkillsSection() {
             return (
               <div
                 key={category.category}
-                className="group glass p-6 rounded-lg hover:bg-white/20 transition-all duration-300 hover:shadow-lg hover:border-accent/50 animate-fadeInUp cursor-pointer"
+                className="group glass rounded-lg p-6 hover:bg-white/25 hover:border-accent/80 transition-all duration-300 hover:shadow-2xl animate-fadeInUp cursor-pointer premium-card border-2 relative overflow-hidden"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                <div
-                  className={`bg-gradient-to-r ${category.color} p-3 rounded-lg w-fit mb-4 group-hover:scale-110 transition-transform`}
-                >
-                  <Icon className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-4 group-hover:text-accent transition-colors">
-                  {category.category}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => (
-                    <span
-                      key={skill}
-                      className="px-3 py-1 bg-accent/10 text-accent border border-accent/20 rounded-full text-xs font-medium hover:bg-accent/20 hover:border-accent/40 transition-all duration-200 group-hover:scale-105 origin-center"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+                {/* Shine effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -skew-x-12 -translate-x-full group-hover:translate-x-full pointer-events-none"></div>
+                
+                <div className="relative z-10">
+                  <div
+                    className={`bg-gradient-to-r ${category.color} p-3 rounded-lg w-fit mb-4 group-hover:scale-125 transition-transform duration-300 shadow-lg`}
+                  >
+                    <Icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground mb-4 group-hover:text-accent transition-colors">
+                    {category.category}
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((skill, idx) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-1 bg-accent/15 text-accent border border-accent/30 rounded-full text-xs font-semibold hover:bg-accent/25 hover:border-accent/60 transition-all duration-200 group-hover:scale-110 cursor-default hover:shadow-md transform"
+                        style={{ transitionDelay: `${idx * 30}ms` }}
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             )

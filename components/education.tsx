@@ -23,17 +23,17 @@ export function EducationSection() {
         {/* Education Timeline */}
         <div className="animate-fadeInUp">
           <h3 className="text-2xl font-bold text-primary mb-6">Education</h3>
-          <div className="bg-card border border-border rounded-lg p-6 md:p-8 space-y-3">
+          <div className="glass border-2 border-accent/40 rounded-lg p-8 hover:bg-white/25 hover:border-accent/80 transition-all duration-300 premium-card hover:shadow-2xl">
             <div className="flex items-start justify-between">
               <div>
-                <h4 className="text-xl font-semibold text-foreground">B.E. Computer Science Engineering</h4>
-                <p className="text-muted-foreground">Bannari Amman Institute of Technology</p>
+                <h4 className="text-xl font-bold text-foreground">B.E. Computer Science Engineering</h4>
+                <p className="text-muted-foreground text-lg">Bannari Amman Institute of Technology</p>
               </div>
-              <span className="text-sm font-medium text-accent">Expected 2027</span>
+              <span className="text-sm font-bold text-accent bg-accent/20 px-4 py-2 rounded-full border border-accent/40">Expected 2027</span>
             </div>
-            <div className="pt-2">
+            <div className="pt-4 mt-4 border-t border-accent/20">
               <p className="text-muted-foreground">
-                <span className="font-semibold text-foreground">CGPA:</span> 7.78 (Ongoing)
+                <span className="font-bold text-foreground">CGPA:</span> <span className="text-accent font-bold">7.78</span> (Ongoing)
               </p>
             </div>
           </div>
@@ -44,27 +44,32 @@ export function EducationSection() {
           {achievements.map((achievement, index) => (
             <div
               key={achievement.label}
-              className="bg-card border border-border rounded-lg p-4 md:p-6 text-center hover:border-accent/50 transition-colors animate-fadeInUp"
+              className="glass border-2 border-accent/30 rounded-lg p-6 text-center hover:border-accent/80 hover:bg-white/25 transition-all duration-300 animate-fadeInUp premium-card hover:shadow-2xl hover:scale-105"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <p className="text-3xl md:text-4xl font-bold text-accent mb-2">{achievement.value}</p>
-              <p className="text-sm md:text-base text-muted-foreground">{achievement.label}</p>
+              <p className="text-4xl font-bold bg-gradient-to-r from-accent to-cyan-400 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">{achievement.value}</p>
+              <p className="text-sm md:text-base text-muted-foreground font-semibold">{achievement.label}</p>
             </div>
           ))}
         </div>
 
         {/* Certifications */}
         <div className="animate-fadeInUp">
-          <h3 className="text-2xl font-bold text-primary mb-6">Certifications</h3>
+          <h3 className="text-2xl font-bold text-primary mb-6">Certifications & Achievements</h3>
           <div className="space-y-4">
             {certifications.map((cert, index) => (
               <div
                 key={cert.name}
-                className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-colors"
+                className="glass border-2 border-accent/30 rounded-lg p-6 hover:border-accent/80 hover:bg-white/25 transition-all duration-300 premium-card hover:shadow-xl group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <h4 className="font-semibold text-foreground">{cert.name}</h4>
-                <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+                <div className="flex items-start gap-4">
+                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-cyan-400 rounded-full mt-2 group-hover:scale-150 transition-transform"></div>
+                  <div className="flex-1">
+                    <h4 className="font-bold text-foreground group-hover:text-accent transition-colors text-lg">{cert.name}</h4>
+                    <p className="text-sm text-muted-foreground mt-1">{cert.issuer}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

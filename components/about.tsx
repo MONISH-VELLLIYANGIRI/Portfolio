@@ -34,33 +34,33 @@ export function AboutSection() {
           </div>
 
           <div className="space-y-4 animate-parallaxUp">
-            <div className="glass p-6 rounded-lg hover:bg-white/20 transition-all duration-300 group">
-              <div className="text-3xl font-bold text-accent group-hover:scale-110 transition-transform origin-left mb-2">
+            <div className="glass p-6 rounded-lg hover:bg-white/25 transition-all duration-300 group premium-card border-2 hover:border-accent/80 hover:shadow-xl">
+              <div className="text-4xl font-bold bg-gradient-to-r from-accent to-cyan-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform origin-left mb-2">
                 300+
               </div>
-              <h3 className="font-semibold text-foreground">LeetCode Problems</h3>
+              <h3 className="font-bold text-foreground text-lg">LeetCode Problems</h3>
               <p className="text-sm text-muted-foreground">Strong DSA foundation and problem-solving skills</p>
             </div>
-            <div className="glass p-6 rounded-lg hover:bg-white/20 transition-all duration-300 group">
-              <div className="text-3xl font-bold text-accent group-hover:scale-110 transition-transform origin-left mb-2">
+            <div className="glass p-6 rounded-lg hover:bg-white/25 transition-all duration-300 group premium-card border-2 hover:border-accent/80 hover:shadow-xl">
+              <div className="text-4xl font-bold bg-gradient-to-r from-accent to-cyan-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform origin-left mb-2">
                 7.78
               </div>
-              <h3 className="font-semibold text-foreground">CGPA</h3>
+              <h3 className="font-bold text-foreground text-lg">CGPA</h3>
               <p className="text-sm text-muted-foreground">B.E. CSE, Bannari Amman Institute of Technology</p>
             </div>
-            <div className="glass p-6 rounded-lg hover:bg-white/20 transition-all duration-300 group">
-              <div className="text-3xl font-bold text-accent group-hover:scale-110 transition-transform origin-left mb-2">
-                3+
+            <div className="glass p-6 rounded-lg hover:bg-white/25 transition-all duration-300 group premium-card border-2 hover:border-accent/80 hover:shadow-xl">
+              <div className="text-4xl font-bold bg-gradient-to-r from-accent to-cyan-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform origin-left mb-2">
+                2+
               </div>
-              <h3 className="font-semibold text-foreground">Years Experience</h3>
-              <p className="text-sm text-muted-foreground">Full-stack dev, AI, and system design</p>
+              <h3 className="font-bold text-foreground text-lg">Certifications</h3>
+              <p className="text-sm text-muted-foreground">NPTEL Java, Udemy LLM Engineering, Oracle Java</p>
             </div>
-            <div className="glass p-6 rounded-lg hover:bg-white/20 transition-all duration-300 group">
-              <div className="text-3xl font-bold text-accent group-hover:scale-110 transition-transform origin-left mb-2">
-                2
+            <div className="glass p-6 rounded-lg hover:bg-white/25 transition-all duration-300 group premium-card border-2 hover:border-accent/80 hover:shadow-xl">
+              <div className="text-4xl font-bold bg-gradient-to-r from-accent to-cyan-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform origin-left mb-2">
+                ∞
               </div>
-              <h3 className="font-semibold text-foreground">Certifications</h3>
-              <p className="text-sm text-muted-foreground">NPTEL Java, Udemy LLM Engineering</p>
+              <h3 className="font-bold text-foreground text-lg">Passion</h3>
+              <p className="text-sm text-muted-foreground">Building AI systems that solve real-world problems</p>
             </div>
           </div>
         </div>

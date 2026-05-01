@@ -8,11 +8,12 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen pt-32 pb-20 px-4 md:px-6 max-w-6xl mx-auto flex items-center overflow-hidden">
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-40 right-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute top-40 right-10 w-72 h-72 bg-gradient-to-br from-accent/40 to-cyan-400/20 rounded-full blur-3xl animate-float"></div>
         <div
-          className="absolute -bottom-40 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"
+          className="absolute -bottom-40 left-10 w-96 h-96 bg-gradient-to-tr from-primary/20 to-accent/10 rounded-full blur-3xl animate-float"
           style={{ animationDelay: "1s" }}
         ></div>
+        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
       </div>
 
       <div className="w-full space-y-8 animate-fadeInUp">
@@ -39,22 +40,22 @@ export function HeroSection() {
 
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <Link href="#projects">
-            <Button className="w-full sm:w-auto gap-2 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-primary-foreground btn-ripple shadow-lg hover:shadow-xl transition-all duration-300">
+            <Button className="w-full sm:w-auto gap-2 bg-gradient-to-r from-accent to-cyan-400 hover:from-accent/90 hover:to-cyan-400/90 text-primary-foreground btn-ripple shadow-lg hover:shadow-2xl transition-all duration-300 text-base font-semibold px-8 py-6">
               View Projects
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>
           <Link href="/" download>
             <Button
               variant="outline"
-              className="w-full sm:w-auto gap-2 glass hover:bg-white/20 border-white/30 bg-transparent"
+              className="w-full sm:w-auto gap-2 glass hover:bg-white/30 border-white/40 bg-white/10 text-foreground hover:text-accent transition-all duration-300 font-semibold px-8 py-6"
             >
               Download Resume
               <Download className="w-4 h-4" />
             </Button>
           </Link>
           <Link href="#contact">
-            <Button variant="ghost" className="w-full sm:w-auto gap-2 hover:bg-accent/20 hover:text-accent">
+            <Button variant="ghost" className="w-full sm:w-auto gap-2 hover:bg-accent/20 hover:text-accent transition-all duration-300 font-semibold px-8 py-6 border border-transparent hover:border-accent/50">
               Get in Touch
               <ArrowRight className="w-4 h-4" />
             </Button>
@@ -66,26 +67,26 @@ export function HeroSection() {
             href="https://github.com/MONISH-VELLLIYANGIRI"
             target="_blank"
             rel="noopener noreferrer"
-            className="glass p-3 rounded-lg hover:bg-white/20 hover:border-accent/50 transition-all duration-300 text-foreground hover:text-accent group"
+            className="glass p-4 rounded-lg hover:bg-white/30 hover:border-accent/80 transition-all duration-300 text-foreground hover:text-accent group hover:scale-110 hover:shadow-lg"
             aria-label="GitHub"
           >
-            <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
+            <Github className="w-5 h-5 group-hover:rotate-12 transition-transform" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/monish-v-570a242b1/"
             target="_blank"
             rel="noopener noreferrer"
-            className="glass p-3 rounded-lg hover:bg-white/20 hover:border-accent/50 transition-all duration-300 text-foreground hover:text-accent group"
+            className="glass p-4 rounded-lg hover:bg-white/30 hover:border-accent/80 transition-all duration-300 text-foreground hover:text-accent group hover:scale-110 hover:shadow-lg"
             aria-label="LinkedIn"
           >
-            <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
+            <Linkedin className="w-5 h-5 group-hover:rotate-12 transition-transform" />
           </Link>
           <Link
             href="mailto:v.monesh906@gmail.com"
-            className="glass p-3 rounded-lg hover:bg-white/20 hover:border-accent/50 transition-all duration-300 text-foreground hover:text-accent group"
+            className="glass p-4 rounded-lg hover:bg-white/30 hover:border-accent/80 transition-all duration-300 text-foreground hover:text-accent group hover:scale-110 hover:shadow-lg"
             aria-label="Email"
           >
-            <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
+            <Mail className="w-5 h-5 group-hover:rotate-12 transition-transform" />
           </Link>
         </div>
 

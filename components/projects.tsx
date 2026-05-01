@@ -54,13 +54,18 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="group glass rounded-xl p-8 hover:bg-white/20 hover:border-accent/50 transition-all duration-300 hover:shadow-2xl animate-fadeInUp overflow-hidden relative"
+              className="group glass rounded-xl p-8 hover:bg-white/25 hover:border-accent/80 transition-all duration-300 hover:shadow-2xl animate-fadeInUp overflow-hidden relative premium-card border-2"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Animated gradient backdrop */}
               <div
-                className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br ${project.gradient} opacity-20 rounded-full blur-3xl group-hover:opacity-30 transition-opacity duration-500`}
+                className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br ${project.gradient} opacity-10 rounded-full blur-3xl group-hover:opacity-30 transition-opacity duration-500`}
               ></div>
+              
+              {/* Shimmer overlay on hover */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              </div>
 
               <div className="relative z-10 space-y-6">
                 <div className="space-y-2">
@@ -68,9 +73,9 @@ export function ProjectsSection() {
                     <h3 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-accent transition-colors">
                       {project.title}
                     </h3>
-                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${project.gradient} animate-pulse`}></div>
+                    <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${project.gradient} animate-pulseGlow`}></div>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed">{project.description}</p>
+                  <p className="text-muted-foreground leading-relaxed text-lg">{project.description}</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -99,7 +104,7 @@ export function ProjectsSection() {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full font-medium border border-accent/20 hover:bg-accent/20 transition-colors"
+                      className="px-4 py-2 bg-gradient-to-r from-accent/20 to-cyan-400/10 text-accent text-xs rounded-full font-semibold border border-accent/40 hover:border-accent/80 hover:bg-accent/30 transition-all duration-300 cursor-pointer hover:shadow-lg hover:scale-105 transform"
                     >
                       {tech}
                     </span>
@@ -111,7 +116,7 @@ export function ProjectsSection() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="gap-2 glass hover:bg-white/30 border-white/30 bg-transparent"
+                      className="gap-2 glass hover:bg-white/40 border-white/50 bg-white/10 hover:text-accent transition-all duration-300 hover:shadow-lg hover:scale-105 font-semibold"
                     >
                       <Github className="w-4 h-4" />
                       View Code
