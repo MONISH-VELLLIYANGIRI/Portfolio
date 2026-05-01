@@ -1,49 +1,36 @@
 "use client"
 
-import { ExternalLink, Github, Sparkles } from "lucide-react"
+import { Github, Sparkles } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export function ProjectsSection() {
   const projects = [
     {
-      title: "AI Story Plot Generator",
+      title: "TN Smart Bus – Intelligent Bus Booking & Tracking Platform",
       description:
-        "An intelligent story generation system powered by advanced LLMs and prompt engineering. Creates unique, coherent narratives based on user parameters with real-time streaming responses.",
-      problemStatement: "How can we generate contextually-aware, creative stories at scale using generative AI?",
-      architecture: "Next.js frontend + OpenAI API backend with streaming responses and prompt optimization",
-      technologies: ["OpenAI API", "Prompt Engineering", "Next.js", "React", "TypeScript", "Vercel"],
-      impact: ["Real-time story generation", "Custom parameters", "High-quality narratives"],
+        "A real-world smart mobility solution for intelligent bus booking and tracking. Features scalable backend services with JWT authentication, dynamic bus discovery, and interactive React-based frontend for seamless booking experience.",
+      problemStatement:
+        "How do we build efficient bus booking systems that solve real-world transport challenges with scalable architecture and real-time tracking capabilities?",
+      architecture:
+        "Spring Boot backend with JWT authentication + MySQL relational database + React frontend with modern UI components",
+      technologies: ["Spring Boot", "JWT Authentication", "MySQL", "React", "Java", "RESTful APIs"],
+      impact: ["Scalable backend services", "Dynamic bus discovery with filtering", "Improved user travel planning", "Real-time booking experience", "Extensible architecture for GPS tracking"],
       github: "https://github.com/MONISH-VELLLIYANGIRI",
-      demo: "https://story-vi8n.vercel.app/login",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
-      title: "College Management Chatbot with RAG",
+      title: "Agri AI Intelligence System using Adaptive Hybrid RAG",
       description:
-        "A RAG-based conversational system leveraging semantic search, embeddings, and SQL integration to provide intelligent responses to college-related queries with real-time knowledge updates.",
+        "An AI-powered agriculture intelligence system using Retrieval-Augmented Generation with adaptive hybrid retrieval strategy. Combines semantic vector search and keyword-based retrieval for accurate, context-aware responses with confidence scoring.",
       problemStatement:
-        "How do we build conversational AI that answers complex college queries with accurate, contextual information?",
+        "How do we build agriculture AI systems that provide accurate, contextual responses using both semantic and keyword-based retrieval with confidence indicators?",
       architecture:
-        "LangChain + RAG pipeline with PostgreSQL backend and semantic embeddings for intelligent retrieval",
-      technologies: ["LangChain", "RAG", "PostgreSQL", "OpenAI Embeddings", "Flask", "Python"],
-      impact: ["Multi-turn conversations", "Semantic search accuracy", "Real-time knowledge updates"],
+        "FastAPI backend with Adaptive Hybrid RAG pipeline (ChromaDB + TF-IDF) + Sentence Transformers embeddings + LLM integration + responsive HTML/CSS/JavaScript frontend",
+      technologies: ["FastAPI", "RAG", "ChromaDB", "Sentence Transformers", "TF-IDF", "LangChain", "LLMs", "Python", "HTML/CSS/JavaScript"],
+      impact: ["Adaptive retrieval strategy", "Context-aware responses", "Confidence scoring for reliability", "Efficient knowledge retrieval", "Scalable AgriTech architecture"],
       github: "https://github.com/MONISH-VELLLIYANGIRI",
-      demo: "https://college-management-chatbot.vercel.app/",
       gradient: "from-purple-500 to-pink-500",
-    },
-    {
-      title: "Cloud-Based Task Manager",
-      description:
-        "A production-grade full-stack task management application with real-time synchronization, collaborative features, and cloud storage integration for seamless team productivity.",
-      problemStatement:
-        "How do we build scalable task management systems with real-time collaboration and reliability?",
-      architecture: "React frontend + Express backend + MongoDB database with WebSocket real-time sync on Vercel",
-      technologies: ["React", "MongoDB", "Express", "Node.js", "Vercel", "WebSockets"],
-      impact: ["Real-time sync", "Collaborative teams", "Cloud reliability"],
-      github: "https://github.com/MONISH-VELLLIYANGIRI",
-      demo: "https://demo.example.com",
-      gradient: "from-orange-500 to-red-500",
     },
   ]
 
@@ -128,15 +115,6 @@ export function ProjectsSection() {
                     >
                       <Github className="w-4 h-4" />
                       View Code
-                    </Button>
-                  </Link>
-                  <Link href={project.demo} target="_blank" rel="noopener noreferrer">
-                    <Button
-                      size="sm"
-                      className={`gap-2 bg-gradient-to-r ${project.gradient} text-white hover:opacity-90`}
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      Live Demo
                     </Button>
                   </Link>
                 </div>

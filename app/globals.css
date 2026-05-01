@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -195,14 +194,14 @@ html {
   }
 }
 
-/* Floating animation */
+/* Floating animation - reduced movement to prevent shaking */
 @keyframes float {
   0%,
   100% {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-3px);
   }
 }
 

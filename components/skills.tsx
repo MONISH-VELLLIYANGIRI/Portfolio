@@ -19,25 +19,25 @@ export function SkillsSection() {
     {
       category: "AI & Machine Learning",
       icon: Brain,
-      skills: ["LLMs", "Prompt Engineering", "RAG", "LangChain", "OpenAI API", "Hugging Face"],
+      skills: ["LLMs", "Prompt Engineering", "RAG", "NLP", "Fine-Tuning (LoRA)", "Agentic AI", "LangChain", "Hugging Face Transformers"],
       color: "from-orange-400 to-red-400",
     },
     {
       category: "Backend & Databases",
       icon: Database,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Node.js", "Express", "REST APIs"],
+      skills: ["Spring Boot", "FastAPI", "MongoDB", "PostgreSQL", "MySQL", "ChromaDB", "Vector Databases", "RESTful APIs"],
       color: "from-green-400 to-emerald-400",
     },
     {
       category: "Tools & DevOps",
       icon: GitBranch,
-      skills: ["Git", "GitHub", "Postman", "Vercel", "Docker", "VS Code"],
+      skills: ["Git", "GitHub", "Postman", "Docker", "AWS (EC2, S3)", "Vercel", "MLOps Concepts"],
       color: "from-cyan-400 to-blue-400",
     },
     {
-      category: "System Design",
+      category: "ML & AI Core Concepts",
       icon: Zap,
-      skills: ["Scalability", "Performance Optimization", "Architecture Patterns", "Cloud Deployment"],
+      skills: ["Tokenization", "Embeddings", "Semantic Search", "Transformer Architecture", "Attention Mechanism", "Vector Databases"],
       color: "from-yellow-400 to-orange-400",
     },
   ]

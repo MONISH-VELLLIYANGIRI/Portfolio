@@ -36,14 +36,14 @@ export function AboutSection() {
           <div className="space-y-4 animate-parallaxUp">
             <div className="glass p-6 rounded-lg hover:bg-white/20 transition-all duration-300 group">
               <div className="text-3xl font-bold text-accent group-hover:scale-110 transition-transform origin-left mb-2">
-                250+
+                300+
               </div>
               <h3 className="font-semibold text-foreground">LeetCode Problems</h3>
-              <p className="text-sm text-muted-foreground">Rank 1500+, Strong DSA foundation</p>
+              <p className="text-sm text-muted-foreground">Strong DSA foundation and problem-solving skills</p>
             </div>
             <div className="glass p-6 rounded-lg hover:bg-white/20 transition-all duration-300 group">
               <div className="text-3xl font-bold text-accent group-hover:scale-110 transition-transform origin-left mb-2">
-                7.77
+                7.78
               </div>
               <h3 className="font-semibold text-foreground">CGPA</h3>
               <p className="text-sm text-muted-foreground">B.E. CSE, Bannari Amman Institute of Technology</p>

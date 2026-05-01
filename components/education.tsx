@@ -2,14 +2,15 @@
 
 export function EducationSection() {
   const achievements = [
-    { label: "LeetCode Problems Solved", value: "250+" },
-    { label: "Current Rank", value: "1500+" },
-    { label: "CGPA", value: "7.77" },
+    { label: "LeetCode Problems Solved", value: "300+" },
+    { label: "Certifications Earned", value: "3" },
+    { label: "CGPA", value: "7.78" },
   ]
 
   const certifications = [
-    { name: "NPTEL Java Programming", issuer: "NPTEL" },
-    { name: "LLM Engineering Specialization", issuer: "Udemy" },
+    { name: "Oracle Certified Professional – Java SE 17 Developer", issuer: "Oracle" },
+    { name: "Programming in Java", issuer: "NPTEL (National Programme on Technology Enhanced Learning)" },
+    { name: "LLM Engineering: Master AI, Large Language Models & Agentic AI", issuer: "Udemy" },
   ]
 
   return (
@@ -28,11 +29,11 @@ export function EducationSection() {
                 <h4 className="text-xl font-semibold text-foreground">B.E. Computer Science Engineering</h4>
                 <p className="text-muted-foreground">Bannari Amman Institute of Technology</p>
               </div>
-              <span className="text-sm font-medium text-accent">Expected 2025</span>
+              <span className="text-sm font-medium text-accent">Expected 2027</span>
             </div>
             <div className="pt-2">
               <p className="text-muted-foreground">
-                <span className="font-semibold text-foreground">CGPA:</span> 7.77
+                <span className="font-semibold text-foreground">CGPA:</span> 7.78 (Ongoing)
               </p>
             </div>
           </div>

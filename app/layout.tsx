@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Monish V | GenAI & Full-Stack Engineer",
   description:
     "Professional portfolio of Monish V, a Computer Science student specializing in Generative AI, LLMs, and Full-Stack Development. Showcasing AI projects, skills, and achievements.",
-  generator: "v0.app",
+  generator: "Custom portfolio",
   keywords: ["Monish V", "GenAI", "Full-Stack Developer", "LLM", "React", "Next.js", "AI Engineer"],
   authors: [{ name: "Monish V" }],
   openGraph: {
